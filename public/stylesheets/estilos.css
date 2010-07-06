@@ -1,0 +1,334 @@
+body {
+	background-image: url(../images/layout/mural.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.fondo_convocatorio_trabajadores {
+	background-image: url(../images/trabajadores/conv_trab.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 220px;
+}
+.fondo_icono_ciudadanos {
+	background-image: url(../images/ciudadanos/iconosciudad.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 142px;
+}
+.fondo_icono_trabajadores {
+	background-image: url(../images/trabajadores/iconosTrabajadores.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 142px;
+}
+.fondo_icono_padres {
+	background-image: url(../images/padres/iconospadres.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 142px;
+}
+.fondo_convocatoria_padres {
+	background-image: url(../images/padres/conv_padres.png);
+	background-repeat: no-repeat;
+	height: 253px;
+	width: 220px;
+}
+.fondo_convocatoria_ciudadanos {
+	background-image: url(../images/ciudadanos/ico_conv.png);
+	background-repeat: no-repeat;
+	height: 253px;
+	width: 220px;
+}
+.fondo_recursos_trabajadores {
+	background-image: url(../images/layout/rec_trab.png);
+	background-repeat: no-repeat;
+	height: 152px;
+	width: 690px;
+}
+.fondo_recursos_ciudadanos {
+	background-image: url(../images/layout/rec_ciud.png);
+	background-repeat: no-repeat;
+	height: 153px;
+	width: 690px;
+}
+.fondo_recursos_padres {
+	background-image: url(../images/layout/rec_padr.png);
+	background-repeat: no-repeat;
+	height: 153px;
+	width: 690px;
+}
+.fondo_contenido_padres {
+	background-image: url(../images/padres/fondopadres.png);
+	background-repeat: no-repeat;
+	height: 310px;
+	width: 690px;
+}
+.fondo_contenido_ciudadanos {
+	background-image: url(../images/ciudadanos/fondociud.png);
+	background-repeat: no-repeat;
+	height: 310px;
+	width: 690px;
+}
+.fondo_contenido_trabajadores {
+	background-image: url(../images/trabajadores/fondo_trab.png);
+	background-repeat: no-repeat;
+	height: 310px;
+	width: 690px;
+}
+.txt_sup_der {
+	font-size: 12px;
+	color: #3D2008;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+.fondo_tramites {
+	background-image: url(../images/layout/tramites2.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 490px;
+}
+.fondo_prensa_vertical {
+	background-image: url(../images/layout/prensa1.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 190px;
+}
+.fondo_recursos {
+	background-image: url(../images/layout/recursos1.png);
+	background-repeat: no-repeat;
+	height: 152px;
+	width: 690px;
+}
+.fondo_rec_est {
+	background-image: url(../images/layout/rec_est.png);
+	background-repeat: no-repeat;
+	height: 152px;
+	width: 690px;
+}
+.fondo_contenido_estudiantes {
+	background-image: url(../images/estudiantes/fondo.png);
+	background-repeat: no-repeat;
+	height: 310px;
+	width: 690px;
+}
+.fondo_arbol {
+	background-image: url(../images/nav/arbol.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 692px;
+}
+.fondo_convocatoria_estudiantes {
+	background-image: url(../images/estudiantes/ico_conv.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 220px;
+}
+
+.fondo_contenido_estudiantes_informacion1 {
+	background-image: url(../images/estudiantes/datos.png);
+	background-repeat: no-repeat;
+	height: 104px;
+	width: 359px;
+	background-position: center;
+}
+.fnd-libros {
+	background-image: url(../images/layout/libros2.jpg);
+	background-repeat: no-repeat;
+	text-align: left;
+	vertical-align: top;
+	height: 200px;
+	width: 33px;
+}
+.fnd_est {
+	background-image: url(../images/layout/fnd_estudiantes.jpg);
+	background-repeat: no-repeat;
+	height: 350px;
+	width: 850px;
+}
+.txt_apartado {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #FFF;
+	text-indent: 30px;
+}
+.txt_contenido {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #FFF;
+	text-indent: 5px;
+}
+.fnd_txt_contenido {
+	background-image: url(../images/layout/article_actions3.png);
+	background-repeat: repeat-x;
+	height: 34px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #FFF;
+	text-indent: 10px;
+}
+.main_nav {
+	background-image: url(../images/nav/main_nav3.png);
+	background-repeat: no-repeat;
+	height: 45px;
+}
+.txt_main_act {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #B3640D;
+}
+.txt_main {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #3D2008;
+}
+.marg_main {
+	padding-left: 30px;
+}
+.fnd_sub_header {
+	background-image: url(../images/layout/sub_header.gif);
+	background-repeat: no-repeat;
+	height: 30px;
+}
+.marg_img_sub_header {
+	margin-left: 1px;
+}
+.txt_portal {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	text-indent: 15px;
+}
+.txt_cont_tram {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+.txt_cont_sub_header {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+}
+.fnd_cont_sub_header {
+	background-image: url(../images/layout/directory_list.gif);
+	background-repeat: no-repeat;
+	height: 130px;
+}
+.txt_sub_header {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	text-indent: 5px;
+	line-height: 25px;
+}
+.fnd_pie {
+	background-image: url(../images/layout/footer1.gif);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 898px;
+	background-position: center;
+}
+.txt_pie {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999;
+}
+.sidebar {
+	background-image: url(../images/layout/sidebar_li.gif);
+	background-repeat: repeat-x;
+	height: 4px;
+	width: 250px;
+}
+.txt_tit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+.fnd_prensa {
+	background-color: #EDEDED;
+}
+.txt_nota {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #F60;
+}
+.txt_nota_cont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+}
+.txt_nota_link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #06C;
+}
+.fnd_barra_articulos {
+	background-image: url(../images/layout/article_actions1.gif);
+	background-repeat: repeat-x;
+	height: 25px;
+	width: 190px;
+}
+.txt_tram {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #5E3849;
+}
+.fondo_prensa {
+	background-image: url(../images/layout/prensa.png);
+	height: 150px;
+	width: 518px;
+	background-repeat: no-repeat;
+}
+.fondo_buscar {
+	background-image: url(../images/layout/BarraPortal.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 370px;
+}
+.fondoSE {
+	background-image: url(../images/layout/BarraPortal.gif);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 370px;
+}
+.TxtSE {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+}
+.fondo_search {
+	background-image: url(../images/form/search.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 220px;
+}
+.nobord { border-style: solid; border-width: 0; padding: 0; background-color: transparent; }
+.fondo_index {
+	background-image: url(../images/layout/fondoindex.png);
+	background-repeat: no-repeat;
+	height: 310px;
+	width: 690px;
+}
+.fondo_universidades_estudiantes {
+	background-image: url(../images/estudiantes/DrioEscuelas.gif);
+	height: 179px;
+	width: 143px;
+	background-repeat: no-repeat;
+}

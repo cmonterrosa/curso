@@ -1,0 +1,56 @@
+<h1>Nueva Area</h1>
+
+<% form_for(@area) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= f.label :telefono_directo %><br />
+    <%= f.text_field :tel_directo %>
+  </p>
+
+  <p>
+    <%= f.label :extension_digital %><br />
+    <%= f.text_field :extension_digital %>
+  </p>
+
+  <p>
+    <%= f.label :extension_analogica %><br />
+    <%= f.text_field :extension_analogica %>
+  </p>
+
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+
+    <%= f.label "Jerarquia del área" %><br />
+    <%= f.collection_select(:jerarquia_id, Jerarquia.find(:all), :id, :nombre, {:prompt => '>>Jerarquia'})  %> <br />
+  <p>
+    <%= f.label "Jerarquia del Padre" %><br />
+    <%= collection_select("", "jerarquia_id", Jerarquia.find(:all), :id, :nombre, :prompt => '>>Jerarquia')  %> <br />
+  </p>
+
+  <p>
+    <%= f.label "Nombre del padre"%><br />
+    <%= collection_select("", "parent_id", Area.find(:all), :id, :nombre, :prompt => '>>Area')    %> <br />
+
+  </p>
+  <p>
+    <%= f.submit 'Guardar' %>
+  </p>
+<% end %>
+
+<%= link_to 'Atras', areas_path %>
+      <%= observe_field '_jerarquia_id',
+        :url => {:action => 'get_areas'},
+        :frequency => 0.5,
+        :update => '_parent_id',
+        :with => '_jerarquia_id' %>
+
+
+

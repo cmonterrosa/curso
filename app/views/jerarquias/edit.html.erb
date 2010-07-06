@@ -1,0 +1,20 @@
+<h1>Editing jerarquia</h1>
+
+<% form_for(@jerarquia) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :prioridad %><br />
+    <%= f.text_field :prioridad %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @jerarquia %> |
+<%= link_to 'Back', jerarquias_path %>

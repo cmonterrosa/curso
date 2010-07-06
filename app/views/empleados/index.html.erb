@@ -1,0 +1,45 @@
+
+
+
+ <label for="searchtext">Búsqueda por nombre:</label>
+  <%= text_field_tag :searchtext %>
+  <%= observe_field(:searchtext,
+                 :frequency => 0.25,
+                 :update => :search_hits,
+                 :with  => "searchtext",
+                 :url => { :action => :live_search }) %>
+<div id="search_hits"></div>
+
+
+
+<!--
+<h1>Listing empleados</h1>
+
+<table>
+  <tr>
+    <th>Paterno</th>
+    <th>Materno</th>
+    <th>Nombre</th>
+    <th>Telefono</th>
+    <th>Correo</th>
+    <th>Puesto</th>
+  </tr>
+
+< @empleados.each do |empleado| %>
+  <tr>
+    <td><=h empleado.paterno %></td>
+    <td><=h empleado.materno %></td>
+    <td><=h empleado.nombre %></td>
+    <td><=h empleado.telefono %></td>
+    <td><=h empleado.correo %></td>
+    <td><=h empleado.puesto_id %></td>
+    <td><= link_to 'Mostrar', empleado %></td>
+    <td><= link_to 'Editar', edit_empleado_path(empleado) %></td>
+    <td><= link_to 'Eliminar', empleado, :confirm => '¿Esta seguro?', :method => :delete %></td>
+  </tr>
+< end %>
+</table>
+-->
+<br />
+
+<%= link_to 'Nuevo empleado', new_empleado_path %>

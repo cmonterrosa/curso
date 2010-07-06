@@ -1,0 +1,28 @@
+<%= error_messages_for 'empleado' %>
+
+<div>
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Area</th>
+    <th>Puesto</th>
+    <th colspan="3">Acciones</th>
+  </tr>
+
+<% for empleado in @empleados %>
+  <tr>
+    <td><%=empleado.nombre_completo%></td>
+  
+    <td>
+    <% for area in empleado.area.ancestors.reverse %>
+    <%= link_to area.nombre, :controller => "areas", :action=>"recorrer", :id => area %> &gt;
+    <% end %><%=link_to empleado.area.nombre, :controller => "areas", :action=>"recorrer", :id => empleado.area%>
+    </td>
+    <td><%=empleado.puesto.puesto%></td>
+    <td><%= link_to 'Detalles', :action => "show", :controller => "empleados", :id => empleado%></td>
+    <td><%= link_to 'Editar', :action => "show", :controller =>"areas", :id => empleado %></td>
+    <td><%= link_to 'Eliminar', { :action => 'destroy', :id => empleado }, :confirm => 'Estas seguro?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+</div>

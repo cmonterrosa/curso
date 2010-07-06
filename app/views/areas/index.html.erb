@@ -1,0 +1,23 @@
+<h1>Listado de Áreas</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Jerarquia</th>
+  </tr>
+
+<% @areas.each do |area| %>
+  <tr>
+    <td><%=h area.nombre %></td>
+    <td><%=h area.jerarquia_id %></td>
+    <td><%= link_to 'Recorrer', :action => "recorrer", :id => area %></td>
+    <td><%= link_to 'Mostrar', area %></td>
+    <td><%= link_to 'Editar', edit_area_path(area) %></td>
+    <td><%= link_to 'Elminar', area, :confirm => '¿Esta seguro?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nueva area', new_area_path %>

@@ -1,0 +1,20 @@
+<h1>Listing puestos</h1>
+
+<table>
+  <tr>
+    <th>Puesto</th>
+  </tr>
+
+<% @puestos.each do |puesto| %>
+  <tr>
+    <td><%=h puesto.puesto %></td>
+    <td><%= link_to 'Show', puesto %></td>
+    <td><%= link_to 'Edit', edit_puesto_path(puesto) %></td>
+    <td><%= link_to 'Destroy', puesto, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New puesto', new_puesto_path %>

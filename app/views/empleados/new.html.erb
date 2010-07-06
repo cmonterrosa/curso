@@ -1,0 +1,41 @@
+<h1>Nuevo Empleado</h1>
+
+<% form_for(@empleado) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :paterno %><br />
+    <%= f.text_field :paterno %>
+  </p>
+  <p>
+    <%= f.label :materno %><br />
+    <%= f.text_field :materno %>
+  </p>
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </p>
+  <p>
+    <%= f.label :correo %><br />
+    <%= f.text_field :correo %>
+  </p>
+  <p>
+    <%= f.label :puesto %><br />
+    <%= f.select :puesto_id, Puesto.find(:all).collect{|registro|[registro.puesto, registro.id] } %>
+  </p>
+
+  <p>
+    <%= f.label :area %><br />
+    <%= f.select :area_id, Area.find(:all).collect{|registro|[registro.nombre, registro.id] } %>
+  </p>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', empleados_path %>

@@ -1,0 +1,38 @@
+<p>
+  <b>Paterno:</b>
+  <%=h @empleado.paterno %>
+</p>
+
+<p>
+  <b>Materno:</b>
+  <%=h @empleado.materno %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%=h @empleado.nombre %>
+</p>
+
+<p>
+  <b>Telefono:</b>
+  <%=h @empleado.telefono %>
+</p>
+
+<p>
+  <b>Correo:</b>
+  <%=h @empleado.correo %>
+</p>
+
+<p>
+  <b>Puesto:</b>
+  <%=h @empleado.puesto.puesto %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%=h @empleado.area.nombre %>
+</p>
+
+
+<%= link_to 'Edit', edit_empleado_path(@empleado) %> |
+<%= link_to 'Back', empleados_path %>

@@ -1,0 +1,16 @@
+<h1>Editing puesto</h1>
+
+<% form_for(@puesto) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :puesto %><br />
+    <%= f.text_field :puesto %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @puesto %> |
+<%= link_to 'Back', puestos_path %>

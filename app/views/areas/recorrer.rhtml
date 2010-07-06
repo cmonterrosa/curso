@@ -1,0 +1,35 @@
+
+<p>
+<% for area in @area.ancestors.reverse %>
+  <%= link_to area.nombre, :action=>"recorrer", :id => area %> &gt;
+<% end %>
+</p>
+
+
+<h2>Nombre del área</h2>
+<h1><%=h @area.nombre %></h1>
+
+
+<h2>Personal</h2>
+
+<%@area.empleados.each do |empleado|%>
+
+<h4><%=empleado.nombre_completo%> &nbsp; <%=empleado.puesto.puesto%></h4><br />
+
+<%end%>
+
+
+<% unless @area.children.empty? %>
+<p>Areas</p>
+<ul id="submenu">
+  <% for area in @area.children %>
+    <li><%= link_to area.nombre, :action => "recorrer", :id=> area %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%=link_to 'Volver', :action=>"index"%>
+
+
+
+

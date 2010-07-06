@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  qna_ini: 2010-06-22
+
+two:
+  nombre: MyString
+  qna_ini: 2010-06-22

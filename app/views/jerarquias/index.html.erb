@@ -1,0 +1,20 @@
+<h1>Listing jerarquias</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+  </tr>
+
+<% @jerarquias.each do |jerarquia| %>
+  <tr>
+    <td><%=h jerarquia.nombre %></td>
+    <td><%= link_to 'Show', jerarquia %></td>
+    <td><%= link_to 'Edit', edit_jerarquia_path(jerarquia) %></td>
+    <td><%= link_to 'Destroy', jerarquia, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New jerarquia', new_jerarquia_path %>
