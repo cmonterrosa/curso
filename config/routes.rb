@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.reporte '/reporte',:controller=>'areas',:action=>'reporte2'
   map.xml '/xml',:controller=>'areas',:action=>'xml'
+  map.xml '/jasper',:controller=>'areas',:action=>'jasper'
 
   map.resources :users
 

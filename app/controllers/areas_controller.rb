@@ -3,6 +3,9 @@ require 'pdf/simpletable'
 require 'date'
 require 'iconv'
 
+ 
+include SendDocHelper
+
 class AreasController < ApplicationController
   #before_filter :login_required
   layout 'oficial'
@@ -222,8 +225,27 @@ class AreasController < ApplicationController
                    datos << {"nombre" => empleado.nombre_completo, "puesto" => empleado.puesto.puesto, "area" => empleado.area.nombre, "telefono" => empleado.telefono, "correo" => empleado.correo, "jerarquia" => empleado.puesto.id}
                end
 
+        #return datos.reverse.to_xml
         render :xml => datos.reverse.to_xml
      end
+
+
+#    def jasper
+#    send_doc_xml(xml,
+#       '/records/record',
+#      'directorio',
+#      'Directorio',
+#     "PDIRECCION@@String@@\"DIRECCION DE INFORMATICA\" -rPDEPARTAMENTO@@String@@\"DEPARTAMENTO DE BASE DE DATOS\"",
+#      'pdf')
+#    end
+
+
+       def jasper
+        param=Hash.new {|k, v| k[v] = {:tipo=>"",:valor=>""}}
+        param["PDIRECCION"]={:tipo=>"String", :valor=>"DIRECCION DE INFORMATICA"}
+        param["PDEPARTAMENTO"]={:tipo=>"String", :valor=>"DEPARTAMENTO DE BASE DE DATOS"}
+        send_doc_xml(xml,'/records/record', 'directorio','Directorio',param,'pdf')
+       end
 
 
 
